@@ -48,3 +48,7 @@ cover.out
 /training-operator
 
 data/
+
+## ctags
+tags
+cscope.*
