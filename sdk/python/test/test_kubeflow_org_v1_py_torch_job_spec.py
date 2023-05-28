@@ -55,16 +55,16 @@ class TestKubeflowOrgV1PyTorchJobSpec(unittest.TestCase):
                     rdzv_port = 56, 
                     standalone = True, ), 
                 pytorch_replica_specs = {
-                    'key' : V1ReplicaSpec(
+                    'key' : kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/replica_spec.github.com.kubeflow.common.pkg.apis.common.v1.ReplicaSpec(
                         replicas = 56, 
                         restart_policy = '0', 
                         template = None, )
                     }, 
-                run_policy = V1RunPolicy(
+                run_policy = kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/run_policy.github.com.kubeflow.common.pkg.apis.common.v1.RunPolicy(
                     active_deadline_seconds = 56, 
                     backoff_limit = 56, 
                     clean_pod_policy = '0', 
-                    scheduling_policy = V1SchedulingPolicy(
+                    scheduling_policy = kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/scheduling_policy.github.com.kubeflow.common.pkg.apis.common.v1.SchedulingPolicy(
                         min_available = 56, 
                         min_resources = {
                             'key' : None
@@ -77,16 +77,16 @@ class TestKubeflowOrgV1PyTorchJobSpec(unittest.TestCase):
         else :
             return KubeflowOrgV1PyTorchJobSpec(
                 pytorch_replica_specs = {
-                    'key' : V1ReplicaSpec(
+                    'key' : kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/replica_spec.github.com.kubeflow.common.pkg.apis.common.v1.ReplicaSpec(
                         replicas = 56, 
                         restart_policy = '0', 
                         template = None, )
                     },
-                run_policy = V1RunPolicy(
+                run_policy = kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/run_policy.github.com.kubeflow.common.pkg.apis.common.v1.RunPolicy(
                     active_deadline_seconds = 56, 
                     backoff_limit = 56, 
                     clean_pod_policy = '0', 
-                    scheduling_policy = V1SchedulingPolicy(
+                    scheduling_policy = kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/scheduling_policy.github.com.kubeflow.common.pkg.apis.common.v1.SchedulingPolicy(
                         min_available = 56, 
                         min_resources = {
                             'key' : None

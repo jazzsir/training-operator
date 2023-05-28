@@ -1,5 +1,6 @@
 # Image URL to use all building/pushing image targets
-IMG ?= kubeflow/training-operator:latest
+IMG ?= hbseo-regi.clova.ai/train/training-operator:0.6
+#IMG ?= kubeflow/training-operator:latest
 # CRD generation options
 CRD_OPTIONS ?= "crd:generateEmbeddedObjectMeta=true,maxDescLen=400"
 
@@ -84,8 +85,10 @@ build: generate fmt vet ## Build manager binary.
 run: manifests generate fmt vet ## Run a controller from your host.
 	go run ./cmd/training-operator.v1/main.go
 
-docker-build: test ## Build docker image with the manager.
+#docker-build: test ## Build docker image with the manager.
+docker-build:
 	docker build -t ${IMG} -f build/images/training-operator/Dockerfile .
+	docker push ${IMG}
 
 docker-push: ## Push docker image with the manager.
 	docker push ${IMG}

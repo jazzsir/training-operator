@@ -19,7 +19,7 @@ tar -xvzf ks_0.13.1_linux_amd64.tar.gz
 sudo cp ks_0.13.1_linux_amd64/ks /usr/local/bin/ks-13
 ```
 
-> We would like to deprecate `ksonnet` but may takes some time. Feel free to pick up [the issue](https://github.com/kubeflow/training-operator/issues/1468) if you are interested in it.
+> We would like to deprecate `ksonnet` but may takes some time. Feel free to pick up [the issue](https://github.com/jazzsir/training-operator/issues/1468) if you are interested in it.
 > If your platform is darwin or windows, feel free to download binaries in [ksonnet v0.13.1](https://github.com/ksonnet/ksonnet/releases/tag/v0.13.1)
 
 4. Deploy HEAD training operator version in your environment
@@ -81,13 +81,13 @@ $ cat /tmp/output/artifact/junit_test_simple_tfjob_cpu.xml
 1. ksonnet is not installed
 
 ```
-ERROR|2021-11-16T03:06:06|/home/jiaxin.shan/go/src/github.com/kubeflow/training-operator/py/kubeflow/tf_operator/test_runner.py|57| There was a problem running the job; Exception [Errno 2] No such file or directory: 'ks-13': 'ks-13'
+ERROR|2021-11-16T03:06:06|/home/jiaxin.shan/go/src/github.com/jazzsir/training-operator/py/kubeflow/tf_operator/test_runner.py|57| There was a problem running the job; Exception [Errno 2] No such file or directory: 'ks-13': 'ks-13'
 Traceback (most recent call last):
-  File "/home/jiaxin.shan/go/src/github.com/kubeflow/training-operator/py/kubeflow/tf_operator/test_runner.py", line 38, in run_test
+  File "/home/jiaxin.shan/go/src/github.com/jazzsir/training-operator/py/kubeflow/tf_operator/test_runner.py", line 38, in run_test
     test_func()
-  File "/home/jiaxin.shan/go/src/github.com/kubeflow/training-operator/py/kubeflow/tf_operator/pod_names_validation_tests.py", line 53, in test_pod_names
+  File "/home/jiaxin.shan/go/src/github.com/jazzsir/training-operator/py/kubeflow/tf_operator/pod_names_validation_tests.py", line 53, in test_pod_names
     self.params)
-  File "/home/jiaxin.shan/go/src/github.com/kubeflow/training-operator/py/kubeflow/tf_operator/util.py", line 579, in setup_ks_app
+  File "/home/jiaxin.shan/go/src/github.com/jazzsir/training-operator/py/kubeflow/tf_operator/util.py", line 579, in setup_ks_app
     cwd=app_dir)
   File "/home/jiaxin.shan/go/src/github.com/kubeflow/testing/py/kubeflow/testing/util.py", line 59, in run
     command, cwd=cwd, env=env, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
@@ -103,11 +103,11 @@ Please check `Prerequsite` section to install ksonnet.
 2. TypeError: load() missing 1 required positional argument: 'Loader'
 
 ```
-ERROR|2021-11-16T03:04:12|/home/jiaxin.shan/go/src/github.com/kubeflow/training-operator/py/kubeflow/tf_operator/test_runner.py|57| There was a problem running the job; Exception load() missing 1 required positional argument: 'Loader'
+ERROR|2021-11-16T03:04:12|/home/jiaxin.shan/go/src/github.com/jazzsir/training-operator/py/kubeflow/tf_operator/test_runner.py|57| There was a problem running the job; Exception load() missing 1 required positional argument: 'Loader'
 Traceback (most recent call last):
-  File "/home/jiaxin.shan/go/src/github.com/kubeflow/training-operator/py/kubeflow/tf_operator/test_runner.py", line 38, in run_test
+  File "/home/jiaxin.shan/go/src/github.com/jazzsir/training-operator/py/kubeflow/tf_operator/test_runner.py", line 38, in run_test
     test_func()
-  File "/home/jiaxin.shan/go/src/github.com/kubeflow/training-operator/py/kubeflow/tf_operator/pod_names_validation_tests.py", line 51, in test_pod_names
+  File "/home/jiaxin.shan/go/src/github.com/jazzsir/training-operator/py/kubeflow/tf_operator/pod_names_validation_tests.py", line 51, in test_pod_names
     ks_cmd = ks_util.get_ksonnet_cmd(self.app_dir)
   File "/home/jiaxin.shan/go/src/github.com/kubeflow/testing/py/kubeflow/testing/ks_util.py", line 47, in get_ksonnet_cmd
     results = yaml.load(app_yaml)

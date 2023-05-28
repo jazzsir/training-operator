@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"time"
 
-	commonv1 "github.com/kubeflow/common/pkg/apis/common/v1"
-	commonutil "github.com/kubeflow/common/pkg/util"
+	commonv1 "github.com/jazzsir/common/pkg/apis/common/v1"
+	commonutil "github.com/jazzsir/common/pkg/util"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )

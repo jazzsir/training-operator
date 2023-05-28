@@ -15,10 +15,10 @@
 package tensorflow
 
 import (
-	commonv1 "github.com/kubeflow/common/pkg/apis/common/v1"
+	commonv1 "github.com/jazzsir/common/pkg/apis/common/v1"
 	corev1 "k8s.io/api/core/v1"
 
-	kubeflowv1 "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1"
+	kubeflowv1 "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1"
 )
 
 // GetPortFromTFJob gets the port of tensorflow container.
@@ -70,7 +70,7 @@ func setRestartPolicy(podTemplateSpec *corev1.PodTemplateSpec, spec *commonv1.Re
 }
 
 // isDistributed returns if the TFJob is a distributed training job.
-// Ref https://github.com/kubeflow/training-operator/issues/1078.
+// Ref https://github.com/jazzsir/training-operator/issues/1078.
 // originally from pkg/controller.v1/tensorflow/pod.go (deleted)
 func isDistributed(tfjob *kubeflowv1.TFJob) bool {
 	replicas := tfjob.Spec.TFReplicaSpecs

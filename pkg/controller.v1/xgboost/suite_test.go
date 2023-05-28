@@ -27,7 +27,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 	v1beta1 "volcano.sh/apis/pkg/apis/scheduling/v1beta1"
 
-	kubeflowv1 "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1"
+	kubeflowv1 "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1"
 	//+kubebuilder:scaffold:imports
 )
 

@@ -37,7 +37,7 @@ class KubeflowOrgV1XGBoostJob(object):
         'kind': 'str',
         'metadata': 'V1ObjectMeta',
         'spec': 'KubeflowOrgV1XGBoostJobSpec',
-        'status': 'V1JobStatus'
+        'status': 'GithubComKubeflowCommonPkgApisCommonV1JobStatus'
     }
 
     attribute_map = {
@@ -166,7 +166,7 @@ class KubeflowOrgV1XGBoostJob(object):
 
 
         :return: The status of this KubeflowOrgV1XGBoostJob.  # noqa: E501
-        :rtype: V1JobStatus
+        :rtype: GithubComKubeflowCommonPkgApisCommonV1JobStatus
         """
         return self._status
 
@@ -176,7 +176,7 @@ class KubeflowOrgV1XGBoostJob(object):
 
 
         :param status: The status of this KubeflowOrgV1XGBoostJob.  # noqa: E501
-        :type: V1JobStatus
+        :type: GithubComKubeflowCommonPkgApisCommonV1JobStatus
         """
 
         self._status = status

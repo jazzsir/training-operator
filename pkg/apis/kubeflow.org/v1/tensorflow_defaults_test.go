@@ -21,8 +21,8 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/utils/pointer"
 
-	commonv1 "github.com/kubeflow/common/pkg/apis/common/v1"
-	"github.com/kubeflow/common/pkg/util"
+	commonv1 "github.com/jazzsir/common/pkg/apis/common/v1"
+	"github.com/jazzsir/common/pkg/util"
 )
 
 func expectedTFJob(cleanPodPolicy commonv1.CleanPodPolicy, restartPolicy commonv1.RestartPolicy, portName string, port int32) *TFJob {

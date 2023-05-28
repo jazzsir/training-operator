@@ -67,7 +67,7 @@ _Note_: Replace `tfjob-name` with your own TF Job name you want to monitor for t
 
 ### Report TFJob metrics:
 
-_Note_: If you are using release v1 tf-operator, these TFJob metrics don't have suffix `total`. So you have to use metric name like `tf_operator_jobs_created` to get your metrics. See [PR](https://github.com/kubeflow/training-operator/pull/1055) to get more information.
+_Note_: If you are using release v1 tf-operator, these TFJob metrics don't have suffix `total`. So you have to use metric name like `tf_operator_jobs_created` to get your metrics. See [PR](https://github.com/jazzsir/training-operator/pull/1055) to get more information.
 
 **Job Creation**
 
