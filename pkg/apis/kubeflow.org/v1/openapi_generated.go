@@ -28,34 +28,34 @@ import (
 
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
-		"github.com/kubeflow/common/pkg/apis/common/v1.JobCondition":                         schema_pkg_apis_common_v1_JobCondition(ref),
-		"github.com/kubeflow/common/pkg/apis/common/v1.JobStatus":                            schema_pkg_apis_common_v1_JobStatus(ref),
-		"github.com/kubeflow/common/pkg/apis/common/v1.ReplicaSpec":                          schema_pkg_apis_common_v1_ReplicaSpec(ref),
-		"github.com/kubeflow/common/pkg/apis/common/v1.ReplicaStatus":                        schema_pkg_apis_common_v1_ReplicaStatus(ref),
-		"github.com/kubeflow/common/pkg/apis/common/v1.RunPolicy":                            schema_pkg_apis_common_v1_RunPolicy(ref),
-		"github.com/kubeflow/common/pkg/apis/common/v1.SchedulingPolicy":                     schema_pkg_apis_common_v1_SchedulingPolicy(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.ElasticPolicy":       schema_pkg_apis_kubefloworg_v1_ElasticPolicy(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.MPIJob":              schema_pkg_apis_kubefloworg_v1_MPIJob(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.MPIJobList":          schema_pkg_apis_kubefloworg_v1_MPIJobList(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.MPIJobSpec":          schema_pkg_apis_kubefloworg_v1_MPIJobSpec(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.MXJob":               schema_pkg_apis_kubefloworg_v1_MXJob(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.MXJobList":           schema_pkg_apis_kubefloworg_v1_MXJobList(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.MXJobSpec":           schema_pkg_apis_kubefloworg_v1_MXJobSpec(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.MXJobStatus":         schema_pkg_apis_kubefloworg_v1_MXJobStatus(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PaddleElasticPolicy": schema_pkg_apis_kubefloworg_v1_PaddleElasticPolicy(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PaddleJob":           schema_pkg_apis_kubefloworg_v1_PaddleJob(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PaddleJobList":       schema_pkg_apis_kubefloworg_v1_PaddleJobList(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PaddleJobSpec":       schema_pkg_apis_kubefloworg_v1_PaddleJobSpec(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PyTorchJob":          schema_pkg_apis_kubefloworg_v1_PyTorchJob(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PyTorchJobList":      schema_pkg_apis_kubefloworg_v1_PyTorchJobList(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PyTorchJobSpec":      schema_pkg_apis_kubefloworg_v1_PyTorchJobSpec(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.RDZVConf":            schema_pkg_apis_kubefloworg_v1_RDZVConf(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.TFJob":               schema_pkg_apis_kubefloworg_v1_TFJob(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.TFJobList":           schema_pkg_apis_kubefloworg_v1_TFJobList(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.TFJobSpec":           schema_pkg_apis_kubefloworg_v1_TFJobSpec(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.XGBoostJob":          schema_pkg_apis_kubefloworg_v1_XGBoostJob(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.XGBoostJobList":      schema_pkg_apis_kubefloworg_v1_XGBoostJobList(ref),
-		"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.XGBoostJobSpec":      schema_pkg_apis_kubefloworg_v1_XGBoostJobSpec(ref),
+		"github.com/jazzsir/common/pkg/apis/common/v1.JobCondition":                         schema_pkg_apis_common_v1_JobCondition(ref),
+		"github.com/jazzsir/common/pkg/apis/common/v1.JobStatus":                            schema_pkg_apis_common_v1_JobStatus(ref),
+		"github.com/jazzsir/common/pkg/apis/common/v1.ReplicaSpec":                          schema_pkg_apis_common_v1_ReplicaSpec(ref),
+		"github.com/jazzsir/common/pkg/apis/common/v1.ReplicaStatus":                        schema_pkg_apis_common_v1_ReplicaStatus(ref),
+		"github.com/jazzsir/common/pkg/apis/common/v1.RunPolicy":                            schema_pkg_apis_common_v1_RunPolicy(ref),
+		"github.com/jazzsir/common/pkg/apis/common/v1.SchedulingPolicy":                     schema_pkg_apis_common_v1_SchedulingPolicy(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.ElasticPolicy":       schema_pkg_apis_kubefloworg_v1_ElasticPolicy(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.MPIJob":              schema_pkg_apis_kubefloworg_v1_MPIJob(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.MPIJobList":          schema_pkg_apis_kubefloworg_v1_MPIJobList(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.MPIJobSpec":          schema_pkg_apis_kubefloworg_v1_MPIJobSpec(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.MXJob":               schema_pkg_apis_kubefloworg_v1_MXJob(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.MXJobList":           schema_pkg_apis_kubefloworg_v1_MXJobList(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.MXJobSpec":           schema_pkg_apis_kubefloworg_v1_MXJobSpec(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.MXJobStatus":         schema_pkg_apis_kubefloworg_v1_MXJobStatus(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PaddleElasticPolicy": schema_pkg_apis_kubefloworg_v1_PaddleElasticPolicy(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PaddleJob":           schema_pkg_apis_kubefloworg_v1_PaddleJob(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PaddleJobList":       schema_pkg_apis_kubefloworg_v1_PaddleJobList(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PaddleJobSpec":       schema_pkg_apis_kubefloworg_v1_PaddleJobSpec(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PyTorchJob":          schema_pkg_apis_kubefloworg_v1_PyTorchJob(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PyTorchJobList":      schema_pkg_apis_kubefloworg_v1_PyTorchJobList(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PyTorchJobSpec":      schema_pkg_apis_kubefloworg_v1_PyTorchJobSpec(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.RDZVConf":            schema_pkg_apis_kubefloworg_v1_RDZVConf(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.TFJob":               schema_pkg_apis_kubefloworg_v1_TFJob(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.TFJobList":           schema_pkg_apis_kubefloworg_v1_TFJobList(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.TFJobSpec":           schema_pkg_apis_kubefloworg_v1_TFJobSpec(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.XGBoostJob":          schema_pkg_apis_kubefloworg_v1_XGBoostJob(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.XGBoostJobList":      schema_pkg_apis_kubefloworg_v1_XGBoostJobList(ref),
+		"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.XGBoostJobSpec":      schema_pkg_apis_kubefloworg_v1_XGBoostJobSpec(ref),
 	}
 }
 
@@ -134,7 +134,7 @@ func schema_pkg_apis_common_v1_JobStatus(ref common.ReferenceCallback) common.Op
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/kubeflow/common/pkg/apis/common/v1.JobCondition"),
+										Ref:     ref("github.com/jazzsir/common/pkg/apis/common/v1.JobCondition"),
 									},
 								},
 							},
@@ -148,7 +148,7 @@ func schema_pkg_apis_common_v1_JobStatus(ref common.ReferenceCallback) common.Op
 								Allows: true,
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubeflow/common/pkg/apis/common/v1.ReplicaStatus"),
+										Ref: ref("github.com/jazzsir/common/pkg/apis/common/v1.ReplicaStatus"),
 									},
 								},
 							},
@@ -177,7 +177,7 @@ func schema_pkg_apis_common_v1_JobStatus(ref common.ReferenceCallback) common.Op
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.JobCondition", "github.com/kubeflow/common/pkg/apis/common/v1.ReplicaStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
+			"github.com/jazzsir/common/pkg/apis/common/v1.JobCondition", "github.com/jazzsir/common/pkg/apis/common/v1.ReplicaStatus", "k8s.io/apimachinery/pkg/apis/meta/v1.Time"},
 	}
 }
 
@@ -304,14 +304,14 @@ func schema_pkg_apis_common_v1_RunPolicy(ref common.ReferenceCallback) common.Op
 					"schedulingPolicy": {
 						SchemaProps: spec.SchemaProps{
 							Description: "SchedulingPolicy defines the policy related to scheduling, e.g. gang-scheduling",
-							Ref:         ref("github.com/kubeflow/common/pkg/apis/common/v1.SchedulingPolicy"),
+							Ref:         ref("github.com/jazzsir/common/pkg/apis/common/v1.SchedulingPolicy"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.SchedulingPolicy"},
+			"github.com/jazzsir/common/pkg/apis/common/v1.SchedulingPolicy"},
 	}
 }
 
@@ -420,7 +420,7 @@ func schema_pkg_apis_kubefloworg_v1_ElasticPolicy(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.RDZVConf"),
+										Ref:     ref("github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.RDZVConf"),
 									},
 								},
 							},
@@ -464,7 +464,7 @@ func schema_pkg_apis_kubefloworg_v1_ElasticPolicy(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.RDZVConf", "k8s.io/api/autoscaling/v2.MetricSpec"},
+			"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.RDZVConf", "k8s.io/api/autoscaling/v2.MetricSpec"},
 	}
 }
 
@@ -497,20 +497,20 @@ func schema_pkg_apis_kubefloworg_v1_MPIJob(ref common.ReferenceCallback) common.
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.MPIJobSpec"),
+							Ref:     ref("github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.MPIJobSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/kubeflow/common/pkg/apis/common/v1.JobStatus"),
+							Ref:     ref("github.com/jazzsir/common/pkg/apis/common/v1.JobStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.JobStatus", "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.MPIJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/jazzsir/common/pkg/apis/common/v1.JobStatus", "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.MPIJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -547,7 +547,7 @@ func schema_pkg_apis_kubefloworg_v1_MPIJobList(ref common.ReferenceCallback) com
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.MPIJob"),
+										Ref:     ref("github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.MPIJob"),
 									},
 								},
 							},
@@ -558,7 +558,7 @@ func schema_pkg_apis_kubefloworg_v1_MPIJobList(ref common.ReferenceCallback) com
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.MPIJob", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.MPIJob", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -590,7 +590,7 @@ func schema_pkg_apis_kubefloworg_v1_MPIJobSpec(ref common.ReferenceCallback) com
 								Allows: true,
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubeflow/common/pkg/apis/common/v1.ReplicaSpec"),
+										Ref: ref("github.com/jazzsir/common/pkg/apis/common/v1.ReplicaSpec"),
 									},
 								},
 							},
@@ -607,7 +607,7 @@ func schema_pkg_apis_kubefloworg_v1_MPIJobSpec(ref common.ReferenceCallback) com
 						SchemaProps: spec.SchemaProps{
 							Description: "`RunPolicy` encapsulates various runtime policies of the distributed training job, for example how to clean up resources and how long the job can stay active.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/kubeflow/common/pkg/apis/common/v1.RunPolicy"),
+							Ref:         ref("github.com/jazzsir/common/pkg/apis/common/v1.RunPolicy"),
 						},
 					},
 				},
@@ -615,7 +615,7 @@ func schema_pkg_apis_kubefloworg_v1_MPIJobSpec(ref common.ReferenceCallback) com
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.ReplicaSpec", "github.com/kubeflow/common/pkg/apis/common/v1.RunPolicy"},
+			"github.com/jazzsir/common/pkg/apis/common/v1.ReplicaSpec", "github.com/jazzsir/common/pkg/apis/common/v1.RunPolicy"},
 	}
 }
 
@@ -649,20 +649,20 @@ func schema_pkg_apis_kubefloworg_v1_MXJob(ref common.ReferenceCallback) common.O
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.MXJobSpec"),
+							Ref:     ref("github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.MXJobSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/kubeflow/common/pkg/apis/common/v1.JobStatus"),
+							Ref:     ref("github.com/jazzsir/common/pkg/apis/common/v1.JobStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.JobStatus", "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.MXJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/jazzsir/common/pkg/apis/common/v1.JobStatus", "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.MXJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -700,7 +700,7 @@ func schema_pkg_apis_kubefloworg_v1_MXJobList(ref common.ReferenceCallback) comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.MXJob"),
+										Ref:     ref("github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.MXJob"),
 									},
 								},
 							},
@@ -711,7 +711,7 @@ func schema_pkg_apis_kubefloworg_v1_MXJobList(ref common.ReferenceCallback) comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.MXJob", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.MXJob", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -726,7 +726,7 @@ func schema_pkg_apis_kubefloworg_v1_MXJobSpec(ref common.ReferenceCallback) comm
 						SchemaProps: spec.SchemaProps{
 							Description: "RunPolicy encapsulates various runtime policies of the distributed training job, for example how to clean up resources and how long the job can stay active.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/kubeflow/common/pkg/apis/common/v1.RunPolicy"),
+							Ref:         ref("github.com/jazzsir/common/pkg/apis/common/v1.RunPolicy"),
 						},
 					},
 					"jobMode": {
@@ -745,7 +745,7 @@ func schema_pkg_apis_kubefloworg_v1_MXJobSpec(ref common.ReferenceCallback) comm
 								Allows: true,
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubeflow/common/pkg/apis/common/v1.ReplicaSpec"),
+										Ref: ref("github.com/jazzsir/common/pkg/apis/common/v1.ReplicaSpec"),
 									},
 								},
 							},
@@ -756,7 +756,7 @@ func schema_pkg_apis_kubefloworg_v1_MXJobSpec(ref common.ReferenceCallback) comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.ReplicaSpec", "github.com/kubeflow/common/pkg/apis/common/v1.RunPolicy"},
+			"github.com/jazzsir/common/pkg/apis/common/v1.ReplicaSpec", "github.com/jazzsir/common/pkg/apis/common/v1.RunPolicy"},
 	}
 }
 
@@ -851,21 +851,21 @@ func schema_pkg_apis_kubefloworg_v1_PaddleJob(ref common.ReferenceCallback) comm
 						SchemaProps: spec.SchemaProps{
 							Description: "Specification of the desired state of the PaddleJob.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PaddleJobSpec"),
+							Ref:         ref("github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PaddleJobSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Most recently observed status of the PaddleJob. Read-only (modified by the system).",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/kubeflow/common/pkg/apis/common/v1.JobStatus"),
+							Ref:         ref("github.com/jazzsir/common/pkg/apis/common/v1.JobStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.JobStatus", "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PaddleJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/jazzsir/common/pkg/apis/common/v1.JobStatus", "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PaddleJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -905,7 +905,7 @@ func schema_pkg_apis_kubefloworg_v1_PaddleJobList(ref common.ReferenceCallback) 
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PaddleJob"),
+										Ref:     ref("github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PaddleJob"),
 									},
 								},
 							},
@@ -916,7 +916,7 @@ func schema_pkg_apis_kubefloworg_v1_PaddleJobList(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PaddleJob", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PaddleJob", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -931,13 +931,13 @@ func schema_pkg_apis_kubefloworg_v1_PaddleJobSpec(ref common.ReferenceCallback) 
 						SchemaProps: spec.SchemaProps{
 							Description: "RunPolicy encapsulates various runtime policies of the distributed training job, for example how to clean up resources and how long the job can stay active.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/kubeflow/common/pkg/apis/common/v1.RunPolicy"),
+							Ref:         ref("github.com/jazzsir/common/pkg/apis/common/v1.RunPolicy"),
 						},
 					},
 					"elasticPolicy": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ElasticPolicy holds the elastic policy for paddle job.",
-							Ref:         ref("github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PaddleElasticPolicy"),
+							Ref:         ref("github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PaddleElasticPolicy"),
 						},
 					},
 					"paddleReplicaSpecs": {
@@ -948,7 +948,7 @@ func schema_pkg_apis_kubefloworg_v1_PaddleJobSpec(ref common.ReferenceCallback) 
 								Allows: true,
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubeflow/common/pkg/apis/common/v1.ReplicaSpec"),
+										Ref: ref("github.com/jazzsir/common/pkg/apis/common/v1.ReplicaSpec"),
 									},
 								},
 							},
@@ -959,7 +959,7 @@ func schema_pkg_apis_kubefloworg_v1_PaddleJobSpec(ref common.ReferenceCallback) 
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.ReplicaSpec", "github.com/kubeflow/common/pkg/apis/common/v1.RunPolicy", "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PaddleElasticPolicy"},
+			"github.com/jazzsir/common/pkg/apis/common/v1.ReplicaSpec", "github.com/jazzsir/common/pkg/apis/common/v1.RunPolicy", "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PaddleElasticPolicy"},
 	}
 }
 
@@ -994,21 +994,21 @@ func schema_pkg_apis_kubefloworg_v1_PyTorchJob(ref common.ReferenceCallback) com
 						SchemaProps: spec.SchemaProps{
 							Description: "Specification of the desired state of the PyTorchJob.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PyTorchJobSpec"),
+							Ref:         ref("github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PyTorchJobSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Most recently observed status of the PyTorchJob. Read-only (modified by the system).",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/kubeflow/common/pkg/apis/common/v1.JobStatus"),
+							Ref:         ref("github.com/jazzsir/common/pkg/apis/common/v1.JobStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.JobStatus", "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PyTorchJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/jazzsir/common/pkg/apis/common/v1.JobStatus", "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PyTorchJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -1048,7 +1048,7 @@ func schema_pkg_apis_kubefloworg_v1_PyTorchJobList(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PyTorchJob"),
+										Ref:     ref("github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PyTorchJob"),
 									},
 								},
 							},
@@ -1059,7 +1059,7 @@ func schema_pkg_apis_kubefloworg_v1_PyTorchJobList(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.PyTorchJob", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.PyTorchJob", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -1074,12 +1074,12 @@ func schema_pkg_apis_kubefloworg_v1_PyTorchJobSpec(ref common.ReferenceCallback)
 						SchemaProps: spec.SchemaProps{
 							Description: "RunPolicy encapsulates various runtime policies of the distributed training job, for example how to clean up resources and how long the job can stay active.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/kubeflow/common/pkg/apis/common/v1.RunPolicy"),
+							Ref:         ref("github.com/jazzsir/common/pkg/apis/common/v1.RunPolicy"),
 						},
 					},
 					"elasticPolicy": {
 						SchemaProps: spec.SchemaProps{
-							Ref: ref("github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.ElasticPolicy"),
+							Ref: ref("github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.ElasticPolicy"),
 						},
 					},
 					"pytorchReplicaSpecs": {
@@ -1090,7 +1090,7 @@ func schema_pkg_apis_kubefloworg_v1_PyTorchJobSpec(ref common.ReferenceCallback)
 								Allows: true,
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubeflow/common/pkg/apis/common/v1.ReplicaSpec"),
+										Ref: ref("github.com/jazzsir/common/pkg/apis/common/v1.ReplicaSpec"),
 									},
 								},
 							},
@@ -1101,7 +1101,7 @@ func schema_pkg_apis_kubefloworg_v1_PyTorchJobSpec(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.ReplicaSpec", "github.com/kubeflow/common/pkg/apis/common/v1.RunPolicy", "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.ElasticPolicy"},
+			"github.com/jazzsir/common/pkg/apis/common/v1.ReplicaSpec", "github.com/jazzsir/common/pkg/apis/common/v1.RunPolicy", "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.ElasticPolicy"},
 	}
 }
 
@@ -1160,21 +1160,21 @@ func schema_pkg_apis_kubefloworg_v1_TFJob(ref common.ReferenceCallback) common.O
 						SchemaProps: spec.SchemaProps{
 							Description: "Specification of the desired state of the TFJob.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.TFJobSpec"),
+							Ref:         ref("github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.TFJobSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Description: "Most recently observed status of the TFJob. Populated by the system. Read-only.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/kubeflow/common/pkg/apis/common/v1.JobStatus"),
+							Ref:         ref("github.com/jazzsir/common/pkg/apis/common/v1.JobStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.JobStatus", "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.TFJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/jazzsir/common/pkg/apis/common/v1.JobStatus", "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.TFJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -1214,7 +1214,7 @@ func schema_pkg_apis_kubefloworg_v1_TFJobList(ref common.ReferenceCallback) comm
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.TFJob"),
+										Ref:     ref("github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.TFJob"),
 									},
 								},
 							},
@@ -1225,7 +1225,7 @@ func schema_pkg_apis_kubefloworg_v1_TFJobList(ref common.ReferenceCallback) comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.TFJob", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.TFJob", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -1240,7 +1240,7 @@ func schema_pkg_apis_kubefloworg_v1_TFJobSpec(ref common.ReferenceCallback) comm
 						SchemaProps: spec.SchemaProps{
 							Description: "RunPolicy encapsulates various runtime policies of the distributed training job, for example how to clean up resources and how long the job can stay active.",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/kubeflow/common/pkg/apis/common/v1.RunPolicy"),
+							Ref:         ref("github.com/jazzsir/common/pkg/apis/common/v1.RunPolicy"),
 						},
 					},
 					"successPolicy": {
@@ -1258,7 +1258,7 @@ func schema_pkg_apis_kubefloworg_v1_TFJobSpec(ref common.ReferenceCallback) comm
 								Allows: true,
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubeflow/common/pkg/apis/common/v1.ReplicaSpec"),
+										Ref: ref("github.com/jazzsir/common/pkg/apis/common/v1.ReplicaSpec"),
 									},
 								},
 							},
@@ -1276,7 +1276,7 @@ func schema_pkg_apis_kubefloworg_v1_TFJobSpec(ref common.ReferenceCallback) comm
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.ReplicaSpec", "github.com/kubeflow/common/pkg/apis/common/v1.RunPolicy"},
+			"github.com/jazzsir/common/pkg/apis/common/v1.ReplicaSpec", "github.com/jazzsir/common/pkg/apis/common/v1.RunPolicy"},
 	}
 }
 
@@ -1310,20 +1310,20 @@ func schema_pkg_apis_kubefloworg_v1_XGBoostJob(ref common.ReferenceCallback) com
 					"spec": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.XGBoostJobSpec"),
+							Ref:     ref("github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.XGBoostJobSpec"),
 						},
 					},
 					"status": {
 						SchemaProps: spec.SchemaProps{
 							Default: map[string]interface{}{},
-							Ref:     ref("github.com/kubeflow/common/pkg/apis/common/v1.JobStatus"),
+							Ref:     ref("github.com/jazzsir/common/pkg/apis/common/v1.JobStatus"),
 						},
 					},
 				},
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.JobStatus", "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.XGBoostJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+			"github.com/jazzsir/common/pkg/apis/common/v1.JobStatus", "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.XGBoostJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 	}
 }
 
@@ -1361,7 +1361,7 @@ func schema_pkg_apis_kubefloworg_v1_XGBoostJobList(ref common.ReferenceCallback)
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
 										Default: map[string]interface{}{},
-										Ref:     ref("github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.XGBoostJob"),
+										Ref:     ref("github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.XGBoostJob"),
 									},
 								},
 							},
@@ -1372,7 +1372,7 @@ func schema_pkg_apis_kubefloworg_v1_XGBoostJobList(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1.XGBoostJob", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+			"github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1.XGBoostJob", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 	}
 }
 
@@ -1387,7 +1387,7 @@ func schema_pkg_apis_kubefloworg_v1_XGBoostJobSpec(ref common.ReferenceCallback)
 						SchemaProps: spec.SchemaProps{
 							Description: "INSERT ADDITIONAL SPEC FIELDS - desired state of cluster Important: Run \"make\" to regenerate code after modifying this file",
 							Default:     map[string]interface{}{},
-							Ref:         ref("github.com/kubeflow/common/pkg/apis/common/v1.RunPolicy"),
+							Ref:         ref("github.com/jazzsir/common/pkg/apis/common/v1.RunPolicy"),
 						},
 					},
 					"xgbReplicaSpecs": {
@@ -1397,7 +1397,7 @@ func schema_pkg_apis_kubefloworg_v1_XGBoostJobSpec(ref common.ReferenceCallback)
 								Allows: true,
 								Schema: &spec.Schema{
 									SchemaProps: spec.SchemaProps{
-										Ref: ref("github.com/kubeflow/common/pkg/apis/common/v1.ReplicaSpec"),
+										Ref: ref("github.com/jazzsir/common/pkg/apis/common/v1.ReplicaSpec"),
 									},
 								},
 							},
@@ -1408,6 +1408,6 @@ func schema_pkg_apis_kubefloworg_v1_XGBoostJobSpec(ref common.ReferenceCallback)
 			},
 		},
 		Dependencies: []string{
-			"github.com/kubeflow/common/pkg/apis/common/v1.ReplicaSpec", "github.com/kubeflow/common/pkg/apis/common/v1.RunPolicy"},
+			"github.com/jazzsir/common/pkg/apis/common/v1.ReplicaSpec", "github.com/jazzsir/common/pkg/apis/common/v1.RunPolicy"},
 	}
 }

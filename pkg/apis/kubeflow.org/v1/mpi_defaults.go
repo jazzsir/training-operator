@@ -17,7 +17,7 @@ package v1
 import (
 	"k8s.io/apimachinery/pkg/runtime"
 
-	commonv1 "github.com/kubeflow/common/pkg/apis/common/v1"
+	commonv1 "github.com/jazzsir/common/pkg/apis/common/v1"
 )
 
 func addMPIJobDefaultingFuncs(scheme *runtime.Scheme) error {

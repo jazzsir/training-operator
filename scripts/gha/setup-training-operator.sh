@@ -41,7 +41,7 @@ if [ "${GANG_SCHEDULER_NAME}" = "scheduler-plugins" ]; then
 
   # Since https://github.com/kubernetes-sigs/scheduler-plugins/pull/526, the scheduler-plugins switch the API group to 'x-k8s.io'.
   # So we must use the specific commit version to available the older API group, 'sigs.k8s.io'.
-  # Details: https://github.com/kubeflow/training-operator/issues/1769
+  # Details: https://github.com/jazzsir/training-operator/issues/1769
   # TODO: Once we support new API group, we should switch the scheduler-plugins version.
   git checkout df16b76a226e58b6961b30ba800e5a713d433c44
 

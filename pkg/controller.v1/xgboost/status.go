@@ -5,8 +5,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	commonv1 "github.com/kubeflow/common/pkg/apis/common/v1"
-	commonutil "github.com/kubeflow/common/pkg/util"
+	commonv1 "github.com/jazzsir/common/pkg/apis/common/v1"
+	commonutil "github.com/jazzsir/common/pkg/util"
 )
 
 func setRunningCondition(logger *logrus.Entry, jobName string, jobStatus *commonv1.JobStatus) error {

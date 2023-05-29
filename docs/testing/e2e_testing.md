@@ -19,7 +19,7 @@ one or more tests. A test typically runs the following:
 
 ## Adding a Test Method
 
-An example can be found [here](https://github.com/kubeflow/training-operator/blob/master/py/kubeflow/tf_operator/simple_tfjob_tests.py).
+An example can be found [here](https://github.com/jazzsir/training-operator/blob/master/py/kubeflow/tf_operator/simple_tfjob_tests.py).
 
 A test class can have several test methods. Each method executes a series of user actions (e.g.
 starting or deleting a TFJob), and performs verifications of expected results (e.g. TFJob exits with
@@ -52,11 +52,11 @@ be added to one of the helper modules:
 ## Adding a TFJob Spec
 
 This is needed if you want to use your own TFJob spec instead of an existing one. An example can be found
-[here](https://github.com/kubeflow/training-operator/tree/master/test/workflows/components/simple_tfjob_v1.jsonnet).
+[here](https://github.com/jazzsir/training-operator/tree/master/test/workflows/components/simple_tfjob_v1.jsonnet).
 All TFJob specs should be placed in the same directory.
 
 These are similar to actual TFJob specs. Note that many of these are using the
-[training-operator-test-server](https://github.com/kubeflow/training-operator/tree/master/test/test-server) as the test image.
+[training-operator-test-server](https://github.com/jazzsir/training-operator/tree/master/test/test-server) as the test image.
 This gives us more control over when each replica exits, and allows us to send specific requests like fetching the
 runtime TensorFlow config.
 
@@ -66,7 +66,7 @@ This is needed if you are creating a new test class. Creating a new test class i
 a new feature, and want to group all relevant E2E tests together.
 
 New test classes should be added as Argo workflow steps to the
-[workflows.libsonnet](https://github.com/kubeflow/training-operator/blob/master/test/workflows/components/workflows.libsonnet) file.
+[workflows.libsonnet](https://github.com/jazzsir/training-operator/blob/master/test/workflows/components/workflows.libsonnet) file.
 
 Under the templates section, add the following to the dag:
 

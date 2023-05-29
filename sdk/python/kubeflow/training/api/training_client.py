@@ -647,7 +647,7 @@ class TrainingClient(object):
 
         # Check if at least one replica is set.
         # TODO (andreyvelich): Remove this check once we have CEL validation.
-        # Ref: https://github.com/kubeflow/training-operator/issues/1708
+        # Ref: https://github.com/jazzsir/training-operator/issues/1708
         if (
             num_chief_replicas is None
             and num_ps_replicas is None
@@ -885,7 +885,7 @@ class TrainingClient(object):
 
         # Check if at least one worker replica is set.
         # TODO (andreyvelich): Remove this check once we have CEL validation.
-        # Ref: https://github.com/kubeflow/training-operator/issues/1708
+        # Ref: https://github.com/jazzsir/training-operator/issues/1708
         if num_worker_replicas is None:
             raise ValueError("At least one Worker replica for PyTorchJob must be set")
 

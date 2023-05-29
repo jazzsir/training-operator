@@ -12,10 +12,10 @@ Create a symbolic link inside your GOPATH to the location you checked out the co
 
 ```sh
 mkdir -p ${go env GOPATH}/src/github.com/kubeflow
-ln -sf ${GIT_TRAINING} ${go env GOPATH}/src/github.com/kubeflow/training-operator
+ln -sf ${GIT_TRAINING} ${go env GOPATH}/src/github.com/jazzsir/training-operator
 ```
 
-- GIT_TRAINING should be the location where you checked out https://github.com/kubeflow/training-operator
+- GIT_TRAINING should be the location where you checked out https://github.com/jazzsir/training-operator
 
 Install dependencies
 
@@ -26,7 +26,7 @@ go mod vendor
 Build it
 
 ```sh
-go install github.com/kubeflow/training-operator/cmd/training-operator.v1
+go install github.com/jazzsir/training-operator/cmd/training-operator.v1
 ```
 
 ## Running the Operator Locally

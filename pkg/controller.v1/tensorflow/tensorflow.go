@@ -22,8 +22,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/kubeflow/common/pkg/controller.v1/common"
-	kubeflowv1 "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1"
+	"github.com/jazzsir/common/pkg/controller.v1/common"
+	kubeflowv1 "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1"
 )
 
 const (

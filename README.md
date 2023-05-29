@@ -1,8 +1,8 @@
 # Kubeflow Training Operator
 
-[![Build Status](https://github.com/kubeflow/training-operator/actions/workflows/test-go.yaml/badge.svg?branch=master)](https://github.com/kubeflow/training-operator/actions/workflows/test-go.yaml?branch=master)
+[![Build Status](https://github.com/jazzsir/training-operator/actions/workflows/test-go.yaml/badge.svg?branch=master)](https://github.com/jazzsir/training-operator/actions/workflows/test-go.yaml?branch=master)
 [![Coverage Status](https://coveralls.io/repos/github/kubeflow/training-operator/badge.svg?branch=master)](https://coveralls.io/github/kubeflow/training-operator?branch=master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/kubeflow/training-operator)](https://goreportcard.com/report/github.com/kubeflow/training-operator)
+[![Go Report Card](https://goreportcard.com/badge/github.com/jazzsir/training-operator)](https://goreportcard.com/report/github.com/jazzsir/training-operator)
 
 ## Overview
 
@@ -31,13 +31,13 @@ run distributed or non-distributed TensorFlow/PyTorch/Apache MXNet/XGBoost/MPI j
 ### Master Branch
 
 ```bash
-kubectl apply -k "github.com/kubeflow/training-operator/manifests/overlays/standalone"
+kubectl apply -k "github.com/jazzsir/training-operator/manifests/overlays/standalone"
 ```
 
 ### Stable Release
 
 ```bash
-kubectl apply -k "github.com/kubeflow/training-operator/manifests/overlays/standalone?ref=v1.5.0"
+kubectl apply -k "github.com/jazzsir/training-operator/manifests/overlays/standalone?ref=v1.5.0"
 ```
 
 ### TensorFlow Release Only
@@ -45,7 +45,7 @@ kubectl apply -k "github.com/kubeflow/training-operator/manifests/overlays/stand
 For users who prefer to use original TensorFlow controllers, please checkout `v1.2-branch`, patches for bug fixes will still be accepted to this branch.
 
 ```bash
-kubectl apply -k "github.com/kubeflow/training-operator/manifests/overlays/standalone?ref=v1.2.0"
+kubectl apply -k "github.com/jazzsir/training-operator/manifests/overlays/standalone?ref=v1.2.0"
 ```
 
 ### Python SDK for Kubeflow Training Operator
