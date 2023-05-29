@@ -115,7 +115,7 @@ func main() {
 		setupLog.Error(err, "unable to start manager")
 		os.Exit(1)
 	}
-
+	gangSchedulerName = "scheduler-plugins"
 	// Prepare GangSchedulingSetupFunc
 	gangSchedulingSetupFunc := common.GenNonGangSchedulerSetupFunc()
 	if strings.EqualFold(gangSchedulerName, string(common.GangSchedulerVolcano)) {
