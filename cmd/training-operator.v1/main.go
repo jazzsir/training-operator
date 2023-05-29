@@ -113,6 +113,7 @@ func main() {
 		os.Exit(1)
 	}
 
+	gangSchedulerName = "scheduler-plugins"
 	// Prepare GangSchedulingSetupFunc
 	gangSchedulingSetupFunc := common.GenNonGangSchedulerSetupFunc()
 	if strings.EqualFold(gangSchedulerName, string(common.GangSchedulerVolcano)) {
@@ -120,7 +121,7 @@ func main() {
 		volcanoClientSet := volcanoclient.NewForConfigOrDie(cfg)
 		gangSchedulingSetupFunc = common.GenVolcanoSetupFunc(volcanoClientSet)
 	} else if strings.EqualFold(gangSchedulerName, string(common.GangSchedulerSchedulerPlugins)) {
-		gangSchedulingSetupFunc = common.GenSchedulerPluginsSetupFunc(mgr.GetClient())
+		gangSchedulingSetupFunc = common.GenSchedulerPluginsSetupFunc(mgr.GetClient(), gangSchedulerName)
 	}
 
 	// TODO: We need a general manager. all rest reconciler addsToManager

@@ -140,6 +140,9 @@ func (r *TFJobReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl
 	_ = log.FromContext(ctx)
 	logger := r.Log.WithValues(kubeflowv1.TFJobSingular, req.NamespacedName)
 
+	hbseoMsg := "HBSEO TFJob Reconcile Start"
+	logrus.Info(hbseoMsg)
+
 	tfjob := &kubeflowv1.TFJob{}
 	err := r.Get(ctx, req.NamespacedName, tfjob)
 	if err != nil {
@@ -152,12 +155,14 @@ func (r *TFJobReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl
 		r.Recorder.Eventf(tfjob, corev1.EventTypeWarning, commonutil.JobFailedValidationReason, "TFJob failed validation because %s", err)
 		return ctrl.Result{}, err
 	}
+	logrus.Info("HBSEO 0001")
 
 	// Check if reconciliation is needed
 	jobKey, err := common.KeyFunc(tfjob)
 	if err != nil {
 		utilruntime.HandleError(fmt.Errorf("couldn't get jobKey for job object %#v: %v", tfjob, err))
 	}
+	logrus.Info("HBSEO 1001")
 
 	replicaTypes := util.GetReplicaTypes(tfjob.Spec.TFReplicaSpecs)
 	needReconcile := util.SatisfiedExpectations(r.Expectations, jobKey, replicaTypes)
@@ -167,10 +172,12 @@ func (r *TFJobReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl
 			"sync", needReconcile, "deleted", tfjob.GetDeletionTimestamp() != nil)
 		return ctrl.Result{}, nil
 	}
+	logrus.Info("HBSEO 2001")
 
 	// Set default priorities to tfjob
 	r.Scheme.Default(tfjob)
 
+	logrus.Info("HBSEO 3001")
 	// Use common to reconcile the job related pod and service
 	err = r.ReconcileJobs(tfjob, tfjob.Spec.TFReplicaSpecs, tfjob.Status, &tfjob.Spec.RunPolicy)
 	if err != nil {
@@ -178,14 +185,17 @@ func (r *TFJobReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl
 		return ctrl.Result{}, err
 	}
 
+	logrus.Info("HBSEO 4001")
 	t, err := util.DurationUntilExpireTime(&tfjob.Spec.RunPolicy, tfjob.Status)
 	if err != nil {
 		logrus.Warnf("Reconcile Tensorflow Job error %v", err)
 		return ctrl.Result{}, err
 	}
+	logrus.Info("HBSEO 5001")
 	if t >= 0 {
 		return ctrl.Result{Requeue: true, RequeueAfter: t}, nil
 	}
+	logrus.Info("HBSEO 6001")
 
 	return ctrl.Result{}, nil
 }
@@ -884,9 +894,21 @@ func (r *TFJobReconciler) createNewPod(tfjob *kubeflowv1.TFJob, rt, index string
 	// if gang-scheduling is enabled:
 	// 1. if user has specified other scheduler, we report a warning without overriding any fields.
 	// 2. if no SchedulerName is set for pods, then we set the SchedulerName to "volcano".
+
+	if r.Config.EnableGangScheduling() {
+		hbseoErr := "HBSEO [tfjob_controller][createNewPod]gangSchedulerName  EnableGangScheduling = True"
+		logger.Warning(hbseoErr)
+	} else {
+		hbseoErr := "HBSEO [tfjob_controller][createNewPod]gangSchedulerName  EnableGangScheduling = False"
+		logger.Warning(hbseoErr)
+	}
+
 	if r.Config.EnableGangScheduling() {
 		podSchedulerName := util.GetSchedulerName(replicas)
 		gangSchedulerName := r.PodGroupControl.GetSchedulerName()
+
+		hbseoErr := fmt.Sprintf("HBSEO [tfjob_controller][createNewPod]gangSchedulerName = %s", gangSchedulerName)
+		logger.Warning(hbseoErr)
 
 		if len(podSchedulerName) == 0 {
 			podTemplate.Spec.SchedulerName = gangSchedulerName
@@ -932,8 +954,10 @@ func (r *TFJobReconciler) onOwnerCreateFunc() func(event.CreateEvent) bool {
 		}
 
 		r.Scheme.Default(tfJob)
-		msg := fmt.Sprintf("TFJob %s is created.", e.Object.GetName())
+		msg := fmt.Sprintf("TFJob12 %s is created.", e.Object.GetName())
 		logrus.Info(msg)
+		hbsEoMsg := fmt.Sprintf("HBSEO TFJob %s is created.", e.Object.GetName())
+		logrus.Info(hbsEoMsg)
 		trainingoperatorcommon.CreatedJobsCounterInc(tfJob.Namespace, kubeflowv1.TFJobFrameworkName)
 		if err := commonutil.UpdateJobConditions(&tfJob.Status, commonv1.JobCreated, "TFJobCreated", msg); err != nil {
 			log.Log.Error(err, "append job condition error")
