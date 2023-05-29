@@ -17,11 +17,11 @@ package tensorflow
 import (
 	"testing"
 
-	commonv1 "github.com/kubeflow/common/pkg/apis/common/v1"
+	commonv1 "github.com/jazzsir/common/pkg/apis/common/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/uuid"
 
-	kubeflowv1 "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1"
+	kubeflowv1 "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1"
 )
 
 func TestGenOwnerReference(t *testing.T) {

@@ -20,8 +20,8 @@ import (
 	"os"
 	"time"
 
-	commonv1 "github.com/kubeflow/common/pkg/apis/common/v1"
-	"github.com/kubeflow/common/pkg/core"
+	commonv1 "github.com/jazzsir/common/pkg/apis/common/v1"
+	"github.com/jazzsir/common/pkg/core"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	corev1 "k8s.io/api/core/v1"
@@ -31,8 +31,8 @@ import (
 	"k8s.io/apimachinery/pkg/util/uuid"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	kubeflowv1 "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1"
-	"github.com/kubeflow/training-operator/pkg/common/util/v1/testutil"
+	kubeflowv1 "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1"
+	"github.com/jazzsir/training-operator/pkg/common/util/v1/testutil"
 )
 
 var _ = Describe("TFJob controller", func() {

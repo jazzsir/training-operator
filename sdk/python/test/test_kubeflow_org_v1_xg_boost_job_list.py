@@ -43,11 +43,11 @@ class TestKubeflowOrgV1XGBoostJobList(unittest.TestCase):
                         kind = '0', 
                         metadata = None, 
                         spec = kubeflow_org_v1_xg_boost_job_spec.KubeflowOrgV1XGBoostJobSpec(
-                            run_policy = V1RunPolicy(
+                            run_policy = kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/run_policy.github.com.kubeflow.common.pkg.apis.common.v1.RunPolicy(
                                 active_deadline_seconds = 56, 
                                 backoff_limit = 56, 
                                 clean_pod_policy = '0', 
-                                scheduling_policy = V1SchedulingPolicy(
+                                scheduling_policy = kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/scheduling_policy.github.com.kubeflow.common.pkg.apis.common.v1.SchedulingPolicy(
                                     min_available = 56, 
                                     min_resources = {
                                         'key' : None
@@ -57,15 +57,15 @@ class TestKubeflowOrgV1XGBoostJobList(unittest.TestCase):
                                     schedule_timeout_seconds = 56, ), 
                                 ttl_seconds_after_finished = 56, ), 
                             xgb_replica_specs = {
-                                'key' : V1ReplicaSpec(
+                                'key' : kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/replica_spec.github.com.kubeflow.common.pkg.apis.common.v1.ReplicaSpec(
                                     replicas = 56, 
                                     restart_policy = '0', 
                                     template = None, )
                                 }, ), 
-                        status = V1JobStatus(
+                        status = kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/job_status.github.com.kubeflow.common.pkg.apis.common.v1.JobStatus(
                             completion_time = None, 
                             conditions = [
-                                V1JobCondition(
+                                kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/job_condition.github.com.kubeflow.common.pkg.apis.common.v1.JobCondition(
                                     last_transition_time = None, 
                                     last_update_time = None, 
                                     message = '0', 
@@ -75,7 +75,7 @@ class TestKubeflowOrgV1XGBoostJobList(unittest.TestCase):
                                 ], 
                             last_reconcile_time = None, 
                             replica_statuses = {
-                                'key' : V1ReplicaStatus(
+                                'key' : kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/replica_status.github.com.kubeflow.common.pkg.apis.common.v1.ReplicaStatus(
                                     active = 56, 
                                     failed = 56, 
                                     label_selector = None, 
@@ -95,11 +95,11 @@ class TestKubeflowOrgV1XGBoostJobList(unittest.TestCase):
                         kind = '0', 
                         metadata = None, 
                         spec = kubeflow_org_v1_xg_boost_job_spec.KubeflowOrgV1XGBoostJobSpec(
-                            run_policy = V1RunPolicy(
+                            run_policy = kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/run_policy.github.com.kubeflow.common.pkg.apis.common.v1.RunPolicy(
                                 active_deadline_seconds = 56, 
                                 backoff_limit = 56, 
                                 clean_pod_policy = '0', 
-                                scheduling_policy = V1SchedulingPolicy(
+                                scheduling_policy = kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/scheduling_policy.github.com.kubeflow.common.pkg.apis.common.v1.SchedulingPolicy(
                                     min_available = 56, 
                                     min_resources = {
                                         'key' : None
@@ -109,15 +109,15 @@ class TestKubeflowOrgV1XGBoostJobList(unittest.TestCase):
                                     schedule_timeout_seconds = 56, ), 
                                 ttl_seconds_after_finished = 56, ), 
                             xgb_replica_specs = {
-                                'key' : V1ReplicaSpec(
+                                'key' : kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/replica_spec.github.com.kubeflow.common.pkg.apis.common.v1.ReplicaSpec(
                                     replicas = 56, 
                                     restart_policy = '0', 
                                     template = None, )
                                 }, ), 
-                        status = V1JobStatus(
+                        status = kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/job_status.github.com.kubeflow.common.pkg.apis.common.v1.JobStatus(
                             completion_time = None, 
                             conditions = [
-                                V1JobCondition(
+                                kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/job_condition.github.com.kubeflow.common.pkg.apis.common.v1.JobCondition(
                                     last_transition_time = None, 
                                     last_update_time = None, 
                                     message = '0', 
@@ -127,7 +127,7 @@ class TestKubeflowOrgV1XGBoostJobList(unittest.TestCase):
                                 ], 
                             last_reconcile_time = None, 
                             replica_statuses = {
-                                'key' : V1ReplicaStatus(
+                                'key' : kubeflow.training.models.github/com/kubeflow/common/pkg/apis/common/v1/replica_status.github.com.kubeflow.common.pkg.apis.common.v1.ReplicaStatus(
                                     active = 56, 
                                     failed = 56, 
                                     label_selector = None, 

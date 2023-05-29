@@ -1,4 +1,4 @@
-# V1ReplicaSpec
+# GithubComKubeflowCommonPkgApisCommonV1ReplicaSpec
 
 ReplicaSpec is a description of the replica
 ## Properties

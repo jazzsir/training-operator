@@ -22,7 +22,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/utils/pointer"
 
-	commonv1 "github.com/kubeflow/common/pkg/apis/common/v1"
+	commonv1 "github.com/jazzsir/common/pkg/apis/common/v1"
 )
 
 func TestDurationUntilExpireTime(t *testing.T) {

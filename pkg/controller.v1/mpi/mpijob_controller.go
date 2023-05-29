@@ -50,15 +50,15 @@ import (
 	schedulerpluginsv1alpha1 "sigs.k8s.io/scheduler-plugins/apis/scheduling/v1alpha1"
 	"volcano.sh/apis/pkg/apis/scheduling/v1beta1"
 
-	commonv1 "github.com/kubeflow/common/pkg/apis/common/v1"
-	"github.com/kubeflow/common/pkg/controller.v1/common"
-	"github.com/kubeflow/common/pkg/controller.v1/control"
-	"github.com/kubeflow/common/pkg/controller.v1/expectation"
-	commonutil "github.com/kubeflow/common/pkg/util"
-	kubeflowv1 "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1"
-	trainingoperatorcommon "github.com/kubeflow/training-operator/pkg/common"
-	"github.com/kubeflow/training-operator/pkg/common/util"
-	ctlrconfig "github.com/kubeflow/training-operator/pkg/config"
+	commonv1 "github.com/jazzsir/common/pkg/apis/common/v1"
+	"github.com/jazzsir/common/pkg/controller.v1/common"
+	"github.com/jazzsir/common/pkg/controller.v1/control"
+	"github.com/jazzsir/common/pkg/controller.v1/expectation"
+	commonutil "github.com/jazzsir/common/pkg/util"
+	kubeflowv1 "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1"
+	trainingoperatorcommon "github.com/jazzsir/training-operator/pkg/common"
+	"github.com/jazzsir/training-operator/pkg/common/util"
+	ctlrconfig "github.com/jazzsir/training-operator/pkg/config"
 )
 
 const (

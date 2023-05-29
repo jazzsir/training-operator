@@ -18,14 +18,14 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/kubeflow/common/pkg/controller.v1/common"
-	kubeflowv1 "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1"
-	mpicontroller "github.com/kubeflow/training-operator/pkg/controller.v1/mpi"
-	mxnetcontroller "github.com/kubeflow/training-operator/pkg/controller.v1/mxnet"
-	paddlecontroller "github.com/kubeflow/training-operator/pkg/controller.v1/paddlepaddle"
-	pytorchcontroller "github.com/kubeflow/training-operator/pkg/controller.v1/pytorch"
-	tensorflowcontroller "github.com/kubeflow/training-operator/pkg/controller.v1/tensorflow"
-	xgboostcontroller "github.com/kubeflow/training-operator/pkg/controller.v1/xgboost"
+	"github.com/jazzsir/common/pkg/controller.v1/common"
+	kubeflowv1 "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1"
+	mpicontroller "github.com/jazzsir/training-operator/pkg/controller.v1/mpi"
+	mxnetcontroller "github.com/jazzsir/training-operator/pkg/controller.v1/mxnet"
+	paddlecontroller "github.com/jazzsir/training-operator/pkg/controller.v1/paddlepaddle"
+	pytorchcontroller "github.com/jazzsir/training-operator/pkg/controller.v1/pytorch"
+	tensorflowcontroller "github.com/jazzsir/training-operator/pkg/controller.v1/tensorflow"
+	xgboostcontroller "github.com/jazzsir/training-operator/pkg/controller.v1/xgboost"
 
 	"sigs.k8s.io/controller-runtime/pkg/manager"
 )

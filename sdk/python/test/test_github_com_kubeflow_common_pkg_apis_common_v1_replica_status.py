@@ -16,11 +16,11 @@ import unittest
 import datetime
 
 from kubeflow.training.models import *
-from kubeflow.training.models.v1_replica_status import V1ReplicaStatus  # noqa: E501
+from kubeflow.training.models.github_com_kubeflow_common_pkg_apis_common_v1_replica_status import GithubComKubeflowCommonPkgApisCommonV1ReplicaStatus  # noqa: E501
 from kubeflow.training.rest import ApiException
 
-class TestV1ReplicaStatus(unittest.TestCase):
-    """V1ReplicaStatus unit test stubs"""
+class TestGithubComKubeflowCommonPkgApisCommonV1ReplicaStatus(unittest.TestCase):
+    """GithubComKubeflowCommonPkgApisCommonV1ReplicaStatus unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,13 +29,13 @@ class TestV1ReplicaStatus(unittest.TestCase):
         pass
 
     def make_instance(self, include_optional):
-        """Test V1ReplicaStatus
+        """Test GithubComKubeflowCommonPkgApisCommonV1ReplicaStatus
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = kubeflow.training.models.v1_replica_status.V1ReplicaStatus()  # noqa: E501
+        # model = kubeflow.training.models.github_com_kubeflow_common_pkg_apis_common_v1_replica_status.GithubComKubeflowCommonPkgApisCommonV1ReplicaStatus()  # noqa: E501
         if include_optional :
-            return V1ReplicaStatus(
+            return GithubComKubeflowCommonPkgApisCommonV1ReplicaStatus(
                 active = 56, 
                 failed = 56, 
                 label_selector = None, 
@@ -43,11 +43,11 @@ class TestV1ReplicaStatus(unittest.TestCase):
                 succeeded = 56
             )
         else :
-            return V1ReplicaStatus(
+            return GithubComKubeflowCommonPkgApisCommonV1ReplicaStatus(
         )
 
-    def testV1ReplicaStatus(self):
-        """Test V1ReplicaStatus"""
+    def testGithubComKubeflowCommonPkgApisCommonV1ReplicaStatus(self):
+        """Test GithubComKubeflowCommonPkgApisCommonV1ReplicaStatus"""
         inst_req_only = self.make_instance(include_optional=False)
         inst_req_and_optional = self.make_instance(include_optional=True)
 

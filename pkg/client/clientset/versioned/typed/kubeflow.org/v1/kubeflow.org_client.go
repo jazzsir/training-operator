@@ -19,8 +19,8 @@ package v1
 import (
 	"net/http"
 
-	v1 "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1"
-	"github.com/kubeflow/training-operator/pkg/client/clientset/versioned/scheme"
+	v1 "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1"
+	"github.com/jazzsir/training-operator/pkg/client/clientset/versioned/scheme"
 	rest "k8s.io/client-go/rest"
 )
 

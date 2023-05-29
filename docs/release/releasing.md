@@ -97,7 +97,7 @@
     ```
 
 1. Cut release from tags and copy results from last step. You can group commits into `Features`, `Bugs` etc. 
-See example [v1.2.0 release](https://github.com/kubeflow/training-operator/releases/tag/v1.2.0)
+See example [v1.2.0 release](https://github.com/jazzsir/training-operator/releases/tag/v1.2.0)
 
 1. Send a PR to update [CHANGELOG.md](../../CHANGELOG.md)
  

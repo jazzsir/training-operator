@@ -16,11 +16,11 @@ import unittest
 import datetime
 
 from kubeflow.training.models import *
-from kubeflow.training.models.v1_replica_spec import V1ReplicaSpec  # noqa: E501
+from kubeflow.training.models.github_com_kubeflow_common_pkg_apis_common_v1_replica_spec import GithubComKubeflowCommonPkgApisCommonV1ReplicaSpec  # noqa: E501
 from kubeflow.training.rest import ApiException
 
-class TestV1ReplicaSpec(unittest.TestCase):
-    """V1ReplicaSpec unit test stubs"""
+class TestGithubComKubeflowCommonPkgApisCommonV1ReplicaSpec(unittest.TestCase):
+    """GithubComKubeflowCommonPkgApisCommonV1ReplicaSpec unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,23 +29,23 @@ class TestV1ReplicaSpec(unittest.TestCase):
         pass
 
     def make_instance(self, include_optional):
-        """Test V1ReplicaSpec
+        """Test GithubComKubeflowCommonPkgApisCommonV1ReplicaSpec
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = kubeflow.training.models.v1_replica_spec.V1ReplicaSpec()  # noqa: E501
+        # model = kubeflow.training.models.github_com_kubeflow_common_pkg_apis_common_v1_replica_spec.GithubComKubeflowCommonPkgApisCommonV1ReplicaSpec()  # noqa: E501
         if include_optional :
-            return V1ReplicaSpec(
+            return GithubComKubeflowCommonPkgApisCommonV1ReplicaSpec(
                 replicas = 56, 
                 restart_policy = '0', 
                 template = None
             )
         else :
-            return V1ReplicaSpec(
+            return GithubComKubeflowCommonPkgApisCommonV1ReplicaSpec(
         )
 
-    def testV1ReplicaSpec(self):
-        """Test V1ReplicaSpec"""
+    def testGithubComKubeflowCommonPkgApisCommonV1ReplicaSpec(self):
+        """Test GithubComKubeflowCommonPkgApisCommonV1ReplicaSpec"""
         inst_req_only = self.make_instance(include_optional=False)
         inst_req_and_optional = self.make_instance(include_optional=True)
 

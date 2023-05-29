@@ -1,4 +1,4 @@
-# V1JobCondition
+# GithubComKubeflowCommonPkgApisCommonV1JobCondition
 
 JobCondition describes the state of the job at a certain point.
 ## Properties

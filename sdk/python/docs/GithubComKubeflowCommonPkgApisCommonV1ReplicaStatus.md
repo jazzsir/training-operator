@@ -1,4 +1,4 @@
-# V1ReplicaStatus
+# GithubComKubeflowCommonPkgApisCommonV1ReplicaStatus
 
 ReplicaStatus represents the current observed state of the replica.
 ## Properties

@@ -34,11 +34,11 @@ import (
 	"volcano.sh/apis/pkg/apis/scheduling/v1beta1"
 	volcanoclient "volcano.sh/apis/pkg/client/clientset/versioned"
 
-	"github.com/kubeflow/common/pkg/controller.v1/common"
-	commonutil "github.com/kubeflow/common/pkg/util"
-	kubeflowv1 "github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1"
-	"github.com/kubeflow/training-operator/pkg/config"
-	controllerv1 "github.com/kubeflow/training-operator/pkg/controller.v1"
+	"github.com/jazzsir/common/pkg/controller.v1/common"
+	commonutil "github.com/jazzsir/common/pkg/util"
+	kubeflowv1 "github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1"
+	"github.com/jazzsir/training-operator/pkg/config"
+	controllerv1 "github.com/jazzsir/training-operator/pkg/controller.v1"
 	//+kubebuilder:scaffold:imports
 )
 
@@ -73,7 +73,7 @@ func main() {
 	flag.StringVar(&leaderElectionID, "leader-election-id", "1ca428e5.training-operator.kubeflow.org", "The ID for leader election.")
 	flag.Var(&enabledSchemes, "enable-scheme", "Enable scheme(s) as --enable-scheme=tfjob --enable-scheme=pytorchjob, case insensitive."+
 		" Now supporting TFJob, PyTorchJob, MXNetJob, XGBoostJob, PaddleJob. By default, all supported schemes will be enabled.")
-	flag.StringVar(&gangSchedulerName, "gang-scheduler-name", "none", "The scheduler to gang-schedule kubeflow jobs, defaults to none")
+	//	flag.StringVar(&gangSchedulerName, "gang-scheduler-name", "none", "The scheduler to gang-schedule kubeflow jobs, defaults to none")
 	flag.StringVar(&namespace, "namespace", os.Getenv(commonutil.EnvKubeflowNamespace), "The namespace to monitor kubeflow jobs. If unset, it monitors all namespaces cluster-wide."+
 		"If set, it only monitors kubeflow jobs in the given namespace.")
 	flag.IntVar(&monitoringPort, "monitoring-port", 9443, "Endpoint port for displaying monitoring metrics. "+

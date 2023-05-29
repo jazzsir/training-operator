@@ -27,7 +27,7 @@ set -o nounset
 set -o pipefail
 
 SCRIPT_ROOT=$(dirname "${BASH_SOURCE[0]}")/..
-ROOT_PKG=github.com/kubeflow/training-operator
+ROOT_PKG=github.com/jazzsir/training-operator
 
 # Grab code-generator version from go.sum
 CODEGEN_VERSION=$(grep 'k8s.io/code-generator' go.mod | awk '{print $2}')
@@ -73,7 +73,7 @@ chmod +x ${CODEGEN_PKG}/generate-groups.sh
 #                  instead of the $GOPATH directly. For normal projects this can be dropped.
 cd ${SCRIPT_ROOT}
 ${CODEGEN_PKG}/generate-groups.sh "all" \
-    github.com/kubeflow/training-operator/pkg/client github.com/kubeflow/training-operator/pkg/apis \
+    github.com/jazzsir/training-operator/pkg/client github.com/jazzsir/training-operator/pkg/apis \
     kubeflow.org:v1 \
     --output-base "${TEMP_DIR}" \
     --go-header-file hack/boilerplate/boilerplate.go.txt
@@ -85,9 +85,9 @@ ${CODEGEN_PKG}/generate-groups.sh "all" \
 
 # ${GOPATH}/bin/defaulter-gen is automatically built from ${CODEGEN_PKG}/generate-groups.sh
 echo "Generating defaulters for kubeflow.org/v1"
-${GOPATH}/bin/defaulter-gen --input-dirs github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1 \
+${GOPATH}/bin/defaulter-gen --input-dirs github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1 \
     -O zz_generated.defaults \
-    --output-package github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1 \
+    --output-package github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1 \
     --go-header-file hack/boilerplate/boilerplate.go.txt "$@" \
     --output-base "${TEMP_DIR}"
 
@@ -99,9 +99,9 @@ echo "Building openapi-gen"
 go build -o openapi-gen ${OPENAPI_PKG}/cmd/openapi-gen
 
 echo "Generating OpenAPI specification for kubeflow.org/v1"
-./openapi-gen --input-dirs github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1,github.com/kubeflow/common/pkg/apis/common/v1 \
+./openapi-gen --input-dirs github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1,github.com/jazzsir/common/pkg/apis/common/v1 \
     --report-filename=hack/violation_exception.list \
-    --output-package github.com/kubeflow/training-operator/pkg/apis/kubeflow.org/v1 \
+    --output-package github.com/jazzsir/training-operator/pkg/apis/kubeflow.org/v1 \
     --go-header-file hack/boilerplate/boilerplate.go.txt "$@" \
     --output-base "${TEMP_DIR}"
 

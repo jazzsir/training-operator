@@ -21,9 +21,9 @@ import (
 	sync "sync"
 	time "time"
 
-	versioned "github.com/kubeflow/training-operator/pkg/client/clientset/versioned"
-	internalinterfaces "github.com/kubeflow/training-operator/pkg/client/informers/externalversions/internalinterfaces"
-	kubefloworg "github.com/kubeflow/training-operator/pkg/client/informers/externalversions/kubeflow.org"
+	versioned "github.com/jazzsir/training-operator/pkg/client/clientset/versioned"
+	internalinterfaces "github.com/jazzsir/training-operator/pkg/client/informers/externalversions/internalinterfaces"
+	kubefloworg "github.com/jazzsir/training-operator/pkg/client/informers/externalversions/kubeflow.org"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

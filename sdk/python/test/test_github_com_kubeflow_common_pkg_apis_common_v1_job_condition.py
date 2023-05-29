@@ -16,11 +16,11 @@ import unittest
 import datetime
 
 from kubeflow.training.models import *
-from kubeflow.training.models.v1_job_condition import V1JobCondition  # noqa: E501
+from kubeflow.training.models.github_com_kubeflow_common_pkg_apis_common_v1_job_condition import GithubComKubeflowCommonPkgApisCommonV1JobCondition  # noqa: E501
 from kubeflow.training.rest import ApiException
 
-class TestV1JobCondition(unittest.TestCase):
-    """V1JobCondition unit test stubs"""
+class TestGithubComKubeflowCommonPkgApisCommonV1JobCondition(unittest.TestCase):
+    """GithubComKubeflowCommonPkgApisCommonV1JobCondition unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,13 +29,13 @@ class TestV1JobCondition(unittest.TestCase):
         pass
 
     def make_instance(self, include_optional):
-        """Test V1JobCondition
+        """Test GithubComKubeflowCommonPkgApisCommonV1JobCondition
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = kubeflow.training.models.v1_job_condition.V1JobCondition()  # noqa: E501
+        # model = kubeflow.training.models.github_com_kubeflow_common_pkg_apis_common_v1_job_condition.GithubComKubeflowCommonPkgApisCommonV1JobCondition()  # noqa: E501
         if include_optional :
-            return V1JobCondition(
+            return GithubComKubeflowCommonPkgApisCommonV1JobCondition(
                 last_transition_time = None, 
                 last_update_time = None, 
                 message = '0', 
@@ -44,13 +44,13 @@ class TestV1JobCondition(unittest.TestCase):
                 type = '0'
             )
         else :
-            return V1JobCondition(
+            return GithubComKubeflowCommonPkgApisCommonV1JobCondition(
                 status = '0',
                 type = '0',
         )
 
-    def testV1JobCondition(self):
-        """Test V1JobCondition"""
+    def testGithubComKubeflowCommonPkgApisCommonV1JobCondition(self):
+        """Test GithubComKubeflowCommonPkgApisCommonV1JobCondition"""
         inst_req_only = self.make_instance(include_optional=False)
         inst_req_and_optional = self.make_instance(include_optional=True)
 
